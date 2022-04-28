@@ -1,0 +1,12 @@
+{
+    "name": "smartboat-nodered-flows",
+    "description": "Node-RED flows used for the smartboat project",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows_openplotter.json",
+            "credentialsFile": "flows_openplotter_cred.json"
+        }
+    }
+}
