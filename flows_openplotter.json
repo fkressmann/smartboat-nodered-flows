@@ -210,7 +210,7 @@
             "y": 160,
             "wires": [
                 {
-                    "id": "bc719e12.478f3",
+                    "id": "9761a9f4.dddb98",
                     "port": 0
                 }
             ]
@@ -331,7 +331,7 @@
         "id": "ac618cac8d307e71",
         "type": "rpi-ds18b20",
         "z": "51a47cad2bf9110a",
-        "topic": "00D756B5013C",
+        "topic": "0217b208e0ff",
         "array": false,
         "name": "",
         "x": 210,
@@ -340,7 +340,8 @@
             [
                 "cb054da.e1f0eb"
             ]
-        ]
+        ],
+        "info": "aussen: 0217b208e0ff\nmotor: 3c01b556d700"
     },
     {
         "id": "9985b52f7eea4a41",
@@ -560,7 +561,7 @@
         "to": "",
         "reg": false,
         "x": 1070,
-        "y": 1020,
+        "y": 940,
         "wires": [
             [
                 "ac0104d1c16c8dce",
@@ -572,7 +573,7 @@
         "id": "2115dbc757601766",
         "type": "debug",
         "z": "51a47cad2bf9110a",
-        "name": "Vorglühzeit",
+        "name": "Vorglühzeitt",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -725,27 +726,13 @@
             "dc765522497418eb",
             "5c2fb96c.d7f4a8"
         ],
-        "x": 335,
-        "y": 760,
+        "x": 1135,
+        "y": 1120,
         "wires": [
             [
                 "37cf0592e513c818"
             ]
         ]
-    },
-    {
-        "id": "1b54aaecd9db555a",
-        "type": "rpi-gpio out",
-        "z": "709c0aa7433349ed",
-        "name": "Bordelektrik / 17",
-        "pin": "11",
-        "set": true,
-        "level": "1",
-        "freq": "",
-        "out": "out",
-        "x": 690,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "f1ece669e1efb0a4",
@@ -757,8 +744,8 @@
         "level": "1",
         "freq": "",
         "out": "out",
-        "x": 680,
-        "y": 160,
+        "x": 1460,
+        "y": 400,
         "wires": []
     },
     {
@@ -771,8 +758,8 @@
         "level": "1",
         "freq": "",
         "out": "out",
-        "x": 670,
-        "y": 220,
+        "x": 1450,
+        "y": 520,
         "wires": []
     },
     {
@@ -786,7 +773,7 @@
         "freq": "",
         "out": "out",
         "x": 690,
-        "y": 280,
+        "y": 1060,
         "wires": []
     },
     {
@@ -798,8 +785,8 @@
             "6e19a127dd68130e",
             "a14114da.7c1698"
         ],
-        "x": 355,
-        "y": 160,
+        "x": 1135,
+        "y": 400,
         "wires": [
             [
                 "4a6f2667d28a5c44"
@@ -815,8 +802,8 @@
             "170889a247930d29",
             "ac0104d1c16c8dce"
         ],
-        "x": 355,
-        "y": 220,
+        "x": 1135,
+        "y": 520,
         "wires": [
             [
                 "185a352e061493eb"
@@ -834,7 +821,7 @@
             "54633bc8.68d584"
         ],
         "x": 355,
-        "y": 280,
+        "y": 1060,
         "wires": [
             [
                 "28caae9c7a77ed69"
@@ -888,7 +875,7 @@
         "freq": "",
         "out": "out",
         "x": 670,
-        "y": 340,
+        "y": 1120,
         "wires": []
     },
     {
@@ -900,7 +887,7 @@
             "98b0acba.5603d"
         ],
         "x": 355,
-        "y": 340,
+        "y": 1120,
         "wires": [
             [
                 "82a3955eb0c4a4a7"
@@ -913,8 +900,8 @@
         "z": "709c0aa7433349ed",
         "name": "Analog inputs Planung",
         "info": "0x48:\n0: Öldruck\n1: 12V Messleitung\n2: Tanksensor\n3: Lima Erregerspannung (macht nur Sinn im diff zur 12V Leitung)\n\n0x49:\n0: 3v3\n1: HES Verbraucher\n2: (ehemals messung von PV strom)\n3: Shunt Inverter\n\n0x4A:\n0:\n1:\n2:\n3:",
-        "x": 1050,
-        "y": 120,
+        "x": 1020,
+        "y": 200,
         "wires": []
     },
     {
@@ -996,14 +983,14 @@
         "id": "01d157ca687e70d4",
         "type": "rpi-gpio out",
         "z": "709c0aa7433349ed",
-        "name": "Inverter / 21",
-        "pin": "40",
+        "name": "Inverter / 7",
+        "pin": "26",
         "set": true,
         "level": "0",
         "freq": "",
         "out": "out",
-        "x": 670,
-        "y": 700,
+        "x": 1290,
+        "y": 820,
         "wires": []
     },
     {
@@ -1016,8 +1003,8 @@
         "level": "0",
         "freq": "",
         "out": "out",
-        "x": 700,
-        "y": 760,
+        "x": 1480,
+        "y": 1120,
         "wires": []
     },
     {
@@ -1192,7 +1179,7 @@
         "z": "709c0aa7433349ed",
         "name": "",
         "x": 490,
-        "y": 100,
+        "y": 400,
         "wires": [
             []
         ]
@@ -1202,8 +1189,8 @@
         "type": "subflow:8e9a1337c6aa6a99",
         "z": "709c0aa7433349ed",
         "name": "",
-        "x": 490,
-        "y": 160,
+        "x": 1270,
+        "y": 400,
         "wires": [
             [
                 "f1ece669e1efb0a4"
@@ -1215,8 +1202,8 @@
         "type": "subflow:8e9a1337c6aa6a99",
         "z": "709c0aa7433349ed",
         "name": "",
-        "x": 490,
-        "y": 220,
+        "x": 1270,
+        "y": 520,
         "wires": [
             [
                 "ea08baef11a796ef"
@@ -1229,7 +1216,7 @@
         "z": "709c0aa7433349ed",
         "name": "",
         "x": 490,
-        "y": 280,
+        "y": 1060,
         "wires": [
             [
                 "28274ccfa75f95e4"
@@ -1242,7 +1229,7 @@
         "z": "709c0aa7433349ed",
         "name": "",
         "x": 490,
-        "y": 340,
+        "y": 1120,
         "wires": [
             [
                 "d09fab0a01caa4ab"
@@ -1255,8 +1242,8 @@
         "z": "709c0aa7433349ed",
         "name": "",
         "env": [],
-        "x": 490,
-        "y": 700,
+        "x": 1110,
+        "y": 820,
         "wires": [
             [
                 "01d157ca687e70d4"
@@ -1271,8 +1258,8 @@
         "links": [
             "acbb71335f980174"
         ],
-        "x": 355,
-        "y": 700,
+        "x": 975,
+        "y": 820,
         "wires": [
             [
                 "3e08bd41c2a5c634"
@@ -1354,8 +1341,8 @@
         "type": "subflow:7e21b3f724e8478f",
         "z": "709c0aa7433349ed",
         "name": "",
-        "x": 490,
-        "y": 760,
+        "x": 1270,
+        "y": 1120,
         "wires": [
             [
                 "e598cded0a08e39e"
@@ -1373,7 +1360,7 @@
         "freq": "",
         "out": "out",
         "x": 680,
-        "y": 400,
+        "y": 460,
         "wires": []
     },
     {
@@ -1387,7 +1374,7 @@
             "ae0ec238.9ed7c"
         ],
         "x": 355,
-        "y": 400,
+        "y": 460,
         "wires": [
             [
                 "e70e38242d07bc2a"
@@ -1400,7 +1387,7 @@
         "z": "709c0aa7433349ed",
         "name": "",
         "x": 490,
-        "y": 400,
+        "y": 460,
         "wires": [
             [
                 "ae90ea799a065788"
@@ -1983,7 +1970,7 @@
         "freq": "",
         "out": "out",
         "x": 670,
-        "y": 460,
+        "y": 940,
         "wires": []
     },
     {
@@ -2006,7 +1993,7 @@
         "z": "709c0aa7433349ed",
         "name": "",
         "x": 490,
-        "y": 460,
+        "y": 940,
         "wires": [
             [
                 "231a15d.59bafea"
@@ -2027,56 +2014,6 @@
         ]
     },
     {
-        "id": "92cf94d9.63b9b8",
-        "type": "inject",
-        "z": "709c0aa7433349ed",
-        "name": "GPIO An",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "ON",
-        "payloadType": "str",
-        "x": 180,
-        "y": 40,
-        "wires": [
-            [
-                "82479bd19df5d18d"
-            ]
-        ]
-    },
-    {
-        "id": "9ed10072.32682",
-        "type": "inject",
-        "z": "709c0aa7433349ed",
-        "name": "GPIO Aus",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "OFF",
-        "payloadType": "str",
-        "x": 180,
-        "y": 80,
-        "wires": [
-            [
-                "82479bd19df5d18d"
-            ]
-        ]
-    },
-    {
         "id": "9aad3033.cd10c",
         "type": "link in",
         "z": "709c0aa7433349ed",
@@ -2085,7 +2022,7 @@
             "cd318374.689a4"
         ],
         "x": 355,
-        "y": 460,
+        "y": 940,
         "wires": [
             [
                 "cc0eed5e.5b428"
@@ -2762,7 +2699,8 @@
         "y": 160,
         "wires": [
             [
-                "4d8728f2.163718"
+                "4d8728f2.163718",
+                "f45fbd09.bbc84"
             ]
         ]
     },
@@ -2958,7 +2896,8 @@
         "wires": [
             [
                 "b2fb3f36.ffd6f",
-                "9b2d52e6.20b5b"
+                "9b2d52e6.20b5b",
+                "3260663f.a86bfa"
             ],
             [
                 "fc55ed79.37a14"
@@ -2999,7 +2938,7 @@
         "name": "Bordnetz eingeschaltet",
         "links": [],
         "x": 650,
-        "y": 60,
+        "y": 40,
         "wires": [],
         "l": true
     },
@@ -3026,8 +2965,8 @@
             "111ab686.7347f9",
             "29236696.2310ea"
         ],
-        "x": 910,
-        "y": 1560,
+        "x": 1550,
+        "y": 1580,
         "wires": [],
         "l": true
     },
@@ -3319,7 +3258,7 @@
         "y": 1500,
         "wires": [
             [
-                "9dde2547.ccc818"
+                "eea5172.45dafe8"
             ]
         ]
     },
@@ -3342,11 +3281,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1170,
+        "x": 930,
         "y": 1500,
         "wires": [
             [
-                "d95be1bf.03047"
+                "9dde2547.ccc818"
             ]
         ]
     },
@@ -3354,7 +3293,7 @@
         "id": "d9443612.b94128",
         "type": "inject",
         "z": "de1f4de9.aa4a1",
-        "name": "",
+        "name": "Intervall 1 Minute",
         "props": [
             {
                 "p": "payload"
@@ -3371,7 +3310,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
+        "x": 170,
         "y": 1500,
         "wires": [
             [
@@ -3656,7 +3595,9 @@
         "x": 760,
         "y": 140,
         "wires": [
-            []
+            [
+                "9761a9f4.dddb98"
+            ]
         ]
     },
     {
@@ -3804,8 +3745,8 @@
         "topic": "",
         "payload": "OFF",
         "payloadType": "str",
-        "x": 220,
-        "y": 280,
+        "x": 180,
+        "y": 580,
         "wires": [
             [
                 "28caae9c7a77ed69"
@@ -3829,8 +3770,8 @@
         "topic": "",
         "payload": "OFF",
         "payloadType": "str",
-        "x": 220,
-        "y": 220,
+        "x": 1000,
+        "y": 520,
         "wires": [
             [
                 "185a352e061493eb"
@@ -3854,8 +3795,8 @@
         "topic": "",
         "payload": "OFF",
         "payloadType": "str",
-        "x": 220,
-        "y": 160,
+        "x": 1000,
+        "y": 400,
         "wires": [
             [
                 "4a6f2667d28a5c44"
@@ -4056,7 +3997,7 @@
         "freq": "",
         "out": "out",
         "x": 670,
-        "y": 580,
+        "y": 1000,
         "wires": []
     },
     {
@@ -4065,7 +4006,7 @@
         "z": "709c0aa7433349ed",
         "name": "",
         "x": 490,
-        "y": 580,
+        "y": 1000,
         "wires": [
             [
                 "e82419fe.19d508"
@@ -4081,7 +4022,7 @@
             "2ae1f79e.024478"
         ],
         "x": 355,
-        "y": 580,
+        "y": 1000,
         "wires": [
             [
                 "4e6a4857.3b2948"
@@ -4139,8 +4080,8 @@
         "topic": "",
         "payload": "ON",
         "payloadType": "str",
-        "x": 220,
-        "y": 320,
+        "x": 180,
+        "y": 620,
         "wires": [
             [
                 "28caae9c7a77ed69"
@@ -4157,7 +4098,6 @@
         "y": 1800,
         "wires": [
             [
-                "891d5752.f65fb8",
                 "536427ca.a24558"
             ]
         ]
@@ -5186,7 +5126,7 @@
         "wires": [
             [
                 "14e7c06f.8288c",
-                "91546d5c.5b25e"
+                "69dc354a.3c591c"
             ]
         ]
     },
@@ -5199,10 +5139,10 @@
         "minout": "0",
         "maxout": "100",
         "action": "scale",
-        "round": false,
+        "round": true,
         "property": "payload.voltage",
         "name": "Tanksensor",
-        "x": 1430,
+        "x": 1470,
         "y": 2020,
         "wires": [
             [
@@ -5229,79 +5169,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1610,
+        "x": 1650,
         "y": 2020,
         "wires": [
             [
+                "7851209c.fe64a",
                 "a9f52260.637c"
-            ]
-        ]
-    },
-    {
-        "id": "91546d5c.5b25e",
-        "type": "ads1x15-raspi",
-        "z": "51a47cad2bf9110a",
-        "property": "payload",
-        "name": "48 - A1/12V",
-        "chip": "IC_ADS1115",
-        "i2c_address": "ADDRESS_0x48",
-        "channel": "CHANNEL_1",
-        "samplesPerSecond0": "SPS_920",
-        "samplesPerSecond1": "SPS_64",
-        "progGainAmp": "PGA_2_048V",
-        "x": 870,
-        "y": 2080,
-        "wires": [
-            [
-                "6b6e3c87.1b73c4",
-                "69dc354a.3c591c"
-            ]
-        ]
-    },
-    {
-        "id": "6b6e3c87.1b73c4",
-        "type": "range",
-        "z": "51a47cad2bf9110a",
-        "minin": "0",
-        "maxin": "1.36",
-        "minout": "0",
-        "maxout": "15",
-        "action": "scale",
-        "round": false,
-        "property": "payload.voltage",
-        "name": "12V Spannungsteiler",
-        "x": 1360,
-        "y": 2080,
-        "wires": [
-            [
-                "1d8c91d0.4fed8e"
-            ]
-        ]
-    },
-    {
-        "id": "1d8c91d0.4fed8e",
-        "type": "change",
-        "z": "51a47cad2bf9110a",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$round(payload.voltage, 1)",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1610,
-        "y": 2080,
-        "wires": [
-            [
-                "54cee4f3.34604c"
             ]
         ]
     },
@@ -5349,24 +5222,6 @@
         ]
     },
     {
-        "id": "54cee4f3.34604c",
-        "type": "subflow:5260990c.64ecc8",
-        "z": "51a47cad2bf9110a",
-        "name": "U12v",
-        "env": [
-            {
-                "name": "item",
-                "value": "U12v",
-                "type": "str"
-            }
-        ],
-        "x": 1830,
-        "y": 2080,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "77628d15.3b0784",
         "type": "rbe",
         "z": "51a47cad2bf9110a",
@@ -5377,8 +5232,8 @@
         "inout": "in",
         "septopics": true,
         "property": "payload.voltage",
-        "x": 1250,
-        "y": 1900,
+        "x": 1290,
+        "y": 2020,
         "wires": [
             [
                 "48750954.8bfb58"
@@ -5406,8 +5261,7 @@
         "y": 2020,
         "wires": [
             [
-                "77628d15.3b0784",
-                "48750954.8bfb58"
+                "77628d15.3b0784"
             ]
         ]
     },
@@ -6607,22 +6461,6 @@
         "wires": []
     },
     {
-        "id": "891d5752.f65fb8",
-        "type": "debug",
-        "z": "de1f4de9.aa4a1",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 390,
-        "y": 1720,
-        "wires": []
-    },
-    {
         "id": "98eaf3b.f22f01",
         "type": "function",
         "z": "65a64bb71643ab7c",
@@ -6745,10 +6583,11 @@
         "samplesPerSecond1": "SPS_64",
         "progGainAmp": "PGA_4_096V",
         "x": 880,
-        "y": 2140,
+        "y": 2080,
         "wires": [
             [
-                "3fa1769d.9453ea"
+                "3fa1769d.9453ea",
+                "c0725416.311748"
             ]
         ]
     },
@@ -6765,7 +6604,7 @@
         "property": "payload.voltage",
         "name": "Drucksensor",
         "x": 1330,
-        "y": 2140,
+        "y": 2080,
         "wires": [
             [
                 "afc9beb3.cb158"
@@ -6792,7 +6631,7 @@
         "to": "",
         "reg": false,
         "x": 1610,
-        "y": 2140,
+        "y": 2080,
         "wires": [
             [
                 "ebe6eef7.30f69"
@@ -6812,7 +6651,7 @@
             }
         ],
         "x": 1850,
-        "y": 2140,
+        "y": 2080,
         "wires": [
             []
         ]
@@ -6891,7 +6730,6 @@
         "y": 180,
         "wires": [
             [
-                "13321165.969c4f",
                 "a6cc51.750aa3b"
             ]
         ]
@@ -7047,8 +6885,8 @@
             "1723bac6.27f185",
             "17161490.5c3f2b"
         ],
-        "x": 940,
-        "y": 780,
+        "x": 1080,
+        "y": 900,
         "wires": [],
         "l": true
     },
@@ -7056,7 +6894,7 @@
         "id": "7e7592e6.5d66ec",
         "type": "rpi-ds18b20",
         "z": "65a64bb71643ab7c",
-        "topic": "00D756B5013C",
+        "topic": "3c01b556d700",
         "array": false,
         "name": "",
         "x": 370,
@@ -7388,74 +7226,6 @@
         ]
     },
     {
-        "id": "69c9247f.80bf1c",
-        "type": "inject",
-        "z": "51a47cad2bf9110a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 330,
-        "y": 1980,
-        "wires": [
-            [
-                "847f47e5.b72468"
-            ]
-        ]
-    },
-    {
-        "id": "cb1d8abb.858e28",
-        "type": "comment",
-        "z": "51a47cad2bf9110a",
-        "name": "",
-        "info": "Tanken 13.05.\nMesslatte   |   Geber % |   Eingefüllt\n90L     32.2    +0\n110L    40.5    +20\n",
-        "x": 1810,
-        "y": 1960,
-        "wires": []
-    },
-    {
-        "id": "b40ae80d.d7e678",
-        "type": "inject",
-        "z": "51a47cad2bf9110a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 720,
-        "y": 1560,
-        "wires": [
-            [
-                "3260663f.a86bfa"
-            ]
-        ]
-    },
-    {
         "id": "cb054da.e1f0eb",
         "type": "switch",
         "z": "51a47cad2bf9110a",
@@ -7485,22 +7255,6 @@
                 "f987c4d1.bd8378"
             ]
         ]
-    },
-    {
-        "id": "3edc602.b30e6a",
-        "type": "debug",
-        "z": "295744be76460eb7",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 910,
-        "y": 1380,
-        "wires": []
     },
     {
         "id": "ade7b4bd.10bd38",
@@ -7543,8 +7297,7 @@
         "y": 1300,
         "wires": [
             [
-                "ade7b4bd.10bd38",
-                "3edc602.b30e6a"
+                "ade7b4bd.10bd38"
             ]
         ]
     },
@@ -7652,8 +7405,8 @@
         "topic": "",
         "payload": "ON",
         "payloadType": "str",
-        "x": 180,
-        "y": 740,
+        "x": 1040,
+        "y": 1100,
         "wires": [
             [
                 "37cf0592e513c818"
@@ -7677,8 +7430,8 @@
         "topic": "",
         "payload": "OFF",
         "payloadType": "str",
-        "x": 180,
-        "y": 780,
+        "x": 1040,
+        "y": 1140,
         "wires": [
             [
                 "37cf0592e513c818"
@@ -7720,9 +7473,7 @@
         "x": 680,
         "y": 1380,
         "wires": [
-            [
-                "3edc602.b30e6a"
-            ]
+            []
         ]
     },
     {
@@ -8066,8 +7817,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
-        "y": 920,
+        "x": 1080,
+        "y": 1020,
         "wires": []
     },
     {
@@ -8127,18 +7878,18 @@
         "id": "9dde2547.ccc818",
         "type": "rbe",
         "z": "de1f4de9.aa4a1",
-        "name": "block if 3v diff",
+        "name": "block if 2v diff",
         "func": "narrowbandEq",
-        "gap": "3",
+        "gap": "2",
         "start": "",
         "inout": "in",
         "septopics": true,
         "property": "payload",
-        "x": 940,
+        "x": 1180,
         "y": 1500,
         "wires": [
             [
-                "eea5172.45dafe8"
+                "d95be1bf.03047"
             ]
         ]
     },
@@ -8321,5 +8072,505 @@
         "x": 1120,
         "y": 360,
         "wires": []
+    },
+    {
+        "id": "c0725416.311748",
+        "type": "link out",
+        "z": "51a47cad2bf9110a",
+        "name": "Messe Starterbatterie",
+        "links": [
+            "1bf19d45.22e113"
+        ],
+        "x": 900,
+        "y": 2140,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "1bf19d45.22e113",
+        "type": "link in",
+        "z": "de1f4de9.aa4a1",
+        "name": "-> Messe Starterbatterie",
+        "links": [
+            "c0725416.311748"
+        ],
+        "x": 150,
+        "y": 1440,
+        "wires": [
+            [
+                "5cfe3088.8e687"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "7851209c.fe64a",
+        "type": "debug",
+        "z": "51a47cad2bf9110a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1850,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "f45fbd09.bbc84",
+        "type": "debug",
+        "z": "51a47cad2bf9110a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4c59d832.49d0f8",
+        "type": "inject",
+        "z": "51a47cad2bf9110a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 910,
+        "y": 360,
+        "wires": [
+            [
+                "233fd743.dab9c8"
+            ]
+        ]
+    },
+    {
+        "id": "b6dc57c5.144918",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "24",
+        "info": "",
+        "x": 1430,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e22045ec.14cae8",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "Drehzahl / 12",
+        "info": "",
+        "x": 1450,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "37ec6fcc.8af74",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "GND",
+        "info": "",
+        "x": 1430,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "cf3cae6a.b2aad",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "26",
+        "info": "",
+        "x": 650,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "bb53bbb2.eb9e08",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "20",
+        "info": "",
+        "x": 1430,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "a839b9d9.00f148",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "3v3",
+        "info": "",
+        "x": 650,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f0f9c529.ef81a8",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "SDA1",
+        "info": "",
+        "x": 650,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "57e12cd6.f92884",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "SCL1",
+        "info": "",
+        "x": 650,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "79811ea3.1c709",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "W1 / 4",
+        "info": "",
+        "x": 650,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "464cb14e.5eb1e",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "GND",
+        "info": "",
+        "x": 650,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "3df54ead.aaafb2",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "3v3",
+        "info": "",
+        "x": 650,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "3cf76305.16691c",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "MOSI",
+        "info": "",
+        "x": 650,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "9ab250dc.49505",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "MISO",
+        "info": "",
+        "x": 650,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "3b8c6d3c.568f52",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "SCLK",
+        "info": "",
+        "x": 650,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "a60df00e.c12d",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "GND",
+        "info": "",
+        "x": 650,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "af208a65.9392e8",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "SD",
+        "info": "",
+        "x": 650,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "ad0a7893.974568",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "GND",
+        "info": "",
+        "x": 650,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "cbb685c2.86dd58",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "5v",
+        "info": "",
+        "x": 1430,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b8e3aeb1.1b9c1",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "5v",
+        "info": "",
+        "x": 1430,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "2c56acbe.db25e4",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "GND",
+        "info": "",
+        "x": 1430,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4b9ecbbf.0b68f4",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "TxD / 14",
+        "info": "",
+        "x": 1440,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a0574d8f.9ddba",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "RxD / 15",
+        "info": "",
+        "x": 1440,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8e08a35d.e2223",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "GND",
+        "info": "",
+        "x": 1430,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c199c970.3e8008",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "GND",
+        "info": "",
+        "x": 1430,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "dff2b201.4ceb2",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "25",
+        "info": "",
+        "x": 1430,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "3cd0c11a.4b019e",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "CE0 / 8",
+        "info": "",
+        "x": 1430,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "316669d0.dcab96",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "CE1 / 7",
+        "info": "",
+        "x": 1430,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "56af84b6.dba5cc",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "GND",
+        "info": "",
+        "x": 1430,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "5e102874.55dd98",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "SC",
+        "info": "",
+        "x": 1430,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "3af3ff50.80d73",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "21",
+        "info": "",
+        "x": 1430,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "ddfd48b3.21cdc8",
+        "type": "comment",
+        "z": "709c0aa7433349ed",
+        "name": "17",
+        "info": "",
+        "x": 650,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "3ffe71c8.60f35e",
+        "type": "rpi-srf",
+        "z": "295744be76460eb7",
+        "name": "Wassertank",
+        "topic": "SRF",
+        "pulse": "5",
+        "pins": "38,40",
+        "precision": "1",
+        "x": 430,
+        "y": 1900,
+        "wires": [
+            [
+                "d3c84f1f.5f0a5"
+            ]
+        ]
+    },
+    {
+        "id": "d3c84f1f.5f0a5",
+        "type": "smooth",
+        "z": "295744be76460eb7",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "10",
+        "round": "1",
+        "mult": "single",
+        "reduce": false,
+        "x": 640,
+        "y": 1900,
+        "wires": [
+            [
+                "9464b73.3905548"
+            ]
+        ]
+    },
+    {
+        "id": "9464b73.3905548",
+        "type": "range",
+        "z": "295744be76460eb7",
+        "minin": "41",
+        "maxin": "10",
+        "minout": "0",
+        "maxout": "100",
+        "action": "scale",
+        "round": true,
+        "property": "payload",
+        "name": "",
+        "x": 880,
+        "y": 1900,
+        "wires": [
+            [
+                "f8b11bdb.e539d8"
+            ]
+        ]
+    },
+    {
+        "id": "f8b11bdb.e539d8",
+        "type": "subflow:5260990c.64ecc8",
+        "z": "295744be76460eb7",
+        "name": "Gwasser",
+        "env": [
+            {
+                "name": "item",
+                "value": "Gwasser",
+                "type": "str"
+            }
+        ],
+        "x": 1120,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9761a9f4.dddb98",
+        "type": "change",
+        "z": "5260990c.64ecc8",
+        "name": "Add timestamp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "status.text",
+                "pt": "msg",
+                "to": "$now() & \" \" & status.text",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 160,
+        "wires": [
+            []
+        ]
     }
 ]
