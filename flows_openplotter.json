@@ -500,7 +500,8 @@
                 "170889a247930d29",
                 "e27d2486.35d1a8",
                 "42ed3f84.7adad",
-                "1f3005f6.c79fda"
+                "1f3005f6.c79fda",
+                "760b7ec7.fa1ad"
             ]
         ]
     },
@@ -510,7 +511,7 @@
         "z": "51a47cad2bf9110a",
         "name": "Motor läuft?",
         "property": "engine.rpm",
-        "propertyType": "msg",
+        "propertyType": "flow",
         "rules": [
             {
                 "t": "gte",
@@ -524,15 +525,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 850,
-        "y": 980,
+        "x": 670,
+        "y": 940,
         "wires": [
             [
                 "4a797ce0f9a39fdf",
-                "c281abeb.b53a68",
                 "2a378e1c.5ac912",
-                "1598465f8c9ff5fb",
-                "8eb27636.e845a8"
+                "8eb27636.e845a8",
+                "29313b9a.a59b84"
             ],
             [
                 "76fc7272.38157c",
@@ -608,8 +608,7 @@
                 "4a797ce0f9a39fdf",
                 "c99a5815.9e2da8",
                 "d8d9ff0a.bd7cc",
-                "2995af2c.b1aec",
-                "e690fb93.687ef8"
+                "2995af2c.b1aec"
             ]
         ]
     },
@@ -655,8 +654,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1370,
-        "y": 1460,
+        "x": 1410,
+        "y": 1520,
         "wires": [
             [
                 "b3b33ae8.864818"
@@ -676,7 +675,7 @@
         "samplesPerSecond1": "SPS_64",
         "progGainAmp": "PGA_2_048V",
         "x": 610,
-        "y": 1340,
+        "y": 1400,
         "wires": [
             [
                 "d2e594827a5f4243"
@@ -704,7 +703,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1100,
-        "y": 1340,
+        "y": 1400,
         "wires": [
             [
                 "6367376fc0cece4a",
@@ -917,7 +916,7 @@
         "property": "payload.voltage",
         "name": "12V Spannungsteiler",
         "x": 880,
-        "y": 1340,
+        "y": 1400,
         "wires": [
             [
                 "dfd9231b0271c7ad",
@@ -989,7 +988,7 @@
         "level": "0",
         "freq": "",
         "out": "out",
-        "x": 1290,
+        "x": 1450,
         "y": 820,
         "wires": []
     },
@@ -1242,7 +1241,7 @@
         "z": "709c0aa7433349ed",
         "name": "",
         "env": [],
-        "x": 1110,
+        "x": 1270,
         "y": 820,
         "wires": [
             [
@@ -1258,7 +1257,7 @@
         "links": [
             "acbb71335f980174"
         ],
-        "x": 975,
+        "x": 1135,
         "y": 820,
         "wires": [
             [
@@ -1735,7 +1734,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "\"Starte Lichtmaschine \" & lima_sek",
+                "to": "\"Warte auf LiMa \" & lima_sek",
                 "tot": "jsonata"
             }
         ],
@@ -1745,7 +1744,7 @@
         "to": "",
         "reg": false,
         "x": 1580,
-        "y": 1340,
+        "y": 1400,
         "wires": [
             [
                 "13321165.969c4f"
@@ -1772,7 +1771,7 @@
         "to": "",
         "reg": false,
         "x": 1570,
-        "y": 1260,
+        "y": 1320,
         "wires": [
             [
                 "13321165.969c4f"
@@ -2583,10 +2582,10 @@
         "type": "range",
         "z": "de1f4de9.aa4a1",
         "minin": "0",
-        "maxin": "1.5",
+        "maxin": "3",
         "minout": "0",
-        "maxout": "100",
-        "action": "scale",
+        "maxout": "200",
+        "action": "clamp",
         "round": false,
         "property": "payload.amperage",
         "name": "Shunt 100A / 75mV * 20",
@@ -2895,12 +2894,10 @@
         "y": 1760,
         "wires": [
             [
-                "b2fb3f36.ffd6f",
-                "9b2d52e6.20b5b",
-                "3260663f.a86bfa"
+                "70a930dc.32d7c"
             ],
             [
-                "fc55ed79.37a14"
+                "73ca5fb5.57d6a"
             ]
         ]
     },
@@ -2923,11 +2920,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1560,
+        "x": 1840,
         "y": 1640,
         "wires": [
             [
-                "13321165.969c4f"
+                "13321165.969c4f",
+                "8fd40b40.42bd18"
             ]
         ]
     },
@@ -2963,10 +2961,11 @@
             "195a117a.75ab3f",
             "634ffcf8.828054",
             "111ab686.7347f9",
-            "29236696.2310ea"
+            "29236696.2310ea",
+            "9ecac1db.afd2d"
         ],
-        "x": 1550,
-        "y": 1580,
+        "x": 1830,
+        "y": 1700,
         "wires": [],
         "l": true
     },
@@ -3428,7 +3427,7 @@
         "to": "",
         "reg": false,
         "x": 710,
-        "y": 1200,
+        "y": 1220,
         "wires": [
             [
                 "d9d7c609.d0c2f8"
@@ -3452,61 +3451,8 @@
             [
                 "841029d8.75d568"
             ],
-            [
-                "855a76a9.1c26d8",
-                "bd13b1b.12caa5"
-            ]
+            []
         ]
-    },
-    {
-        "id": "855a76a9.1c26d8",
-        "type": "change",
-        "z": "de1f4de9.aa4a1",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "timestamp",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "timestamp & \": \" & payload",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 710,
-        "y": 680,
-        "wires": [
-            [
-                "bd13b1b.12caa5"
-            ]
-        ]
-    },
-    {
-        "id": "bd13b1b.12caa5",
-        "type": "debug",
-        "z": "de1f4de9.aa4a1",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 830,
-        "y": 620,
-        "wires": []
     },
     {
         "id": "8263799.5caf088",
@@ -3631,7 +3577,7 @@
             }
         ],
         "x": 1640,
-        "y": 1160,
+        "y": 1180,
         "wires": [
             []
         ]
@@ -3722,8 +3668,8 @@
                 "type": "str"
             }
         ],
-        "x": 1890,
-        "y": 1760,
+        "x": 1190,
+        "y": 1640,
         "wires": [
             []
         ]
@@ -3952,7 +3898,7 @@
             "e6e84edb1eb0f68d"
         ],
         "x": 1535,
-        "y": 1460,
+        "y": 1520,
         "wires": []
     },
     {
@@ -4695,7 +4641,7 @@
                 "t": "set",
                 "p": "payload.amperage",
                 "pt": "msg",
-                "to": "payload.voltage + 0.038",
+                "to": "payload.voltage + 0.015",
                 "tot": "jsonata"
             }
         ],
@@ -4818,7 +4764,7 @@
         "z": "51a47cad2bf9110a",
         "name": "counter",
         "frequency": "sec",
-        "interval": "1",
+        "interval": "2",
         "estimation": true,
         "ignore": false,
         "pauseAtStartup": false,
@@ -4836,13 +4782,13 @@
         "id": "a84cdef6.ace15",
         "type": "change",
         "z": "51a47cad2bf9110a",
-        "name": "",
+        "name": "calc rpm",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "payload / 8 * 60",
+                "to": "payload / 8 * 30",
                 "tot": "jsonata"
             },
             {
@@ -4858,11 +4804,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 930,
+        "x": 920,
         "y": 1760,
         "wires": [
             [
-                "48fa716c.344a1"
+                "48fa716c.344a1",
+                "fc55ed79.37a14"
             ]
         ]
     },
@@ -4948,7 +4895,7 @@
         "id": "ecd2b850.af5618",
         "type": "rbe",
         "z": "51a47cad2bf9110a",
-        "name": "",
+        "name": "if changed",
         "func": "rbe",
         "gap": "",
         "start": "",
@@ -5038,13 +4985,12 @@
         "id": "233fd743.dab9c8",
         "type": "link out",
         "z": "51a47cad2bf9110a",
-        "name": "Motor starten",
+        "name": "Instrumente Ein",
         "links": [
-            "18b0e30c.f77d9d",
             "9143b69a.f37e68"
         ],
-        "x": 1040,
-        "y": 400,
+        "x": 940,
+        "y": 360,
         "wires": [],
         "l": true
     },
@@ -5054,7 +5000,7 @@
         "z": "51a47cad2bf9110a",
         "name": "-> Motor starten",
         "links": [
-            "233fd743.dab9c8"
+            "760b7ec7.fa1ad"
         ],
         "x": 200,
         "y": 1660,
@@ -5069,11 +5015,11 @@
         "id": "9143b69a.f37e68",
         "type": "link in",
         "z": "51a47cad2bf9110a",
-        "name": "-> Motor starten",
+        "name": "-> Instrumente Ein",
         "links": [
             "233fd743.dab9c8"
         ],
-        "x": 140,
+        "x": 150,
         "y": 2020,
         "wires": [
             [
@@ -5187,7 +5133,7 @@
         "op2": "0",
         "op1type": "str",
         "op2type": "str",
-        "duration": "-10",
+        "duration": "-1",
         "extend": false,
         "overrideDelay": false,
         "units": "s",
@@ -5357,7 +5303,7 @@
         "to": "",
         "reg": false,
         "x": 130,
-        "y": 960,
+        "y": 920,
         "wires": [
             [
                 "b1bc38806bc98f49",
@@ -5371,8 +5317,8 @@
         "z": "51a47cad2bf9110a",
         "name": "Lichtmaschine starten",
         "info": "",
-        "x": 820,
-        "y": 1200,
+        "x": 840,
+        "y": 1280,
         "wires": []
     },
     {
@@ -5678,8 +5624,7 @@
                 "6bcb9509.46f58c",
                 "bb7ff838.c30248",
                 "47d82520.9390cc",
-                "ebee260d.a46c28",
-                "6c951503.9fea4c"
+                "ebee260d.a46c28"
             ]
         ]
     },
@@ -6007,23 +5952,6 @@
         "wires": []
     },
     {
-        "id": "6c951503.9fea4c",
-        "type": "debug",
-        "z": "de1f4de9.aa4a1",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 330,
-        "y": 2240,
-        "wires": []
-    },
-    {
         "id": "a0934ec1.3da17",
         "type": "delay",
         "z": "295744be76460eb7",
@@ -6062,7 +5990,7 @@
         "randomUnits": "seconds",
         "drop": false,
         "x": 350,
-        "y": 1340,
+        "y": 1400,
         "wires": [
             [
                 "79e0edac5936fcef"
@@ -6089,7 +6017,7 @@
         "to": "",
         "reg": false,
         "x": 760,
-        "y": 1420,
+        "y": 1480,
         "wires": [
             [
                 "8eb27636.e845a8"
@@ -6112,10 +6040,10 @@
         "randomUnits": "seconds",
         "drop": false,
         "x": 360,
-        "y": 980,
+        "y": 940,
         "wires": [
             [
-                "34ee2630.692eea"
+                "59e6fc0e165e74a5"
             ]
         ]
     },
@@ -6138,159 +6066,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
-        "y": 920,
+        "x": 510,
+        "y": 1000,
         "wires": [
             [
                 "7c806554.392d6c"
-            ]
-        ]
-    },
-    {
-        "id": "fe666dfbc7b90b35",
-        "type": "interval-length",
-        "z": "65a64bb71643ab7c",
-        "format": "mills",
-        "bytopic": false,
-        "minimum": "",
-        "maximum": "",
-        "window": "",
-        "timeout": false,
-        "msgTimeout": "",
-        "minimumunit": "msecs",
-        "maximumunit": "msecs",
-        "windowunit": "msecs",
-        "msgTimeoutUnit": "msecs",
-        "reset": false,
-        "startup": false,
-        "msgField": "payload",
-        "timestampField": "timestamp",
-        "repeatTimeout": false,
-        "name": "",
-        "x": 620,
-        "y": 580,
-        "wires": [
-            [
-                "42fbdf22b35d8d32"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "fe02bc7255a7930a",
-        "type": "debug",
-        "z": "65a64bb71643ab7c",
-        "name": "END",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1470,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "42fbdf22b35d8d32",
-        "type": "smooth",
-        "z": "65a64bb71643ab7c",
-        "name": "min",
-        "property": "payload",
-        "action": "min",
-        "count": "2",
-        "round": "",
-        "mult": "single",
-        "reduce": true,
-        "x": 830,
-        "y": 580,
-        "wires": [
-            [
-                "52a6a2403ec54a0b"
-            ]
-        ]
-    },
-    {
-        "id": "d566868c83224c85",
-        "type": "range",
-        "z": "65a64bb71643ab7c",
-        "minin": "0",
-        "maxin": "50",
-        "minout": "0",
-        "maxout": "30",
-        "action": "scale",
-        "round": false,
-        "property": "payload",
-        "name": "",
-        "x": 1150,
-        "y": 580,
-        "wires": [
-            [
-                "fe02bc7255a7930a"
-            ]
-        ]
-    },
-    {
-        "id": "52a6a2403ec54a0b",
-        "type": "smooth",
-        "z": "65a64bb71643ab7c",
-        "name": "smooth",
-        "property": "payload",
-        "action": "mean",
-        "count": "20",
-        "round": "",
-        "mult": "single",
-        "reduce": true,
-        "x": 980,
-        "y": 580,
-        "wires": [
-            [
-                "d566868c83224c85"
-            ]
-        ]
-    },
-    {
-        "id": "8e6e285f.ea0008",
-        "type": "rpi-gpio in",
-        "z": "65a64bb71643ab7c",
-        "d": true,
-        "name": "Echolot / 16",
-        "pin": "36",
-        "intype": "up",
-        "debounce": "0",
-        "read": false,
-        "x": 190,
-        "y": 580,
-        "wires": [
-            [
-                "28b7125c.9bd65e"
-            ]
-        ]
-    },
-    {
-        "id": "28b7125c.9bd65e",
-        "type": "switch",
-        "z": "65a64bb71643ab7c",
-        "name": "Wenn payload = 1",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 390,
-        "y": 580,
-        "wires": [
-            [
-                "fe666dfbc7b90b35"
             ]
         ]
     },
@@ -6435,8 +6215,8 @@
         "z": "65a64bb71643ab7c",
         "name": " Victron",
         "serial": "99bc1002.fccbd",
-        "x": 610,
-        "y": 860,
+        "x": 600,
+        "y": 460,
         "wires": [
             [
                 "98eaf3b.f22f01"
@@ -6456,8 +6236,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 1080,
+        "x": 980,
+        "y": 680,
         "wires": []
     },
     {
@@ -6471,8 +6251,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
-        "y": 920,
+        "x": 820,
+        "y": 520,
         "wires": [
             [
                 "9b2a7053.23309"
@@ -6490,8 +6270,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1000,
+        "x": 450,
+        "y": 600,
         "wires": [
             [
                 "1251324c.e83dde"
@@ -6524,8 +6304,8 @@
         "topic": "7",
         "payload": "",
         "payloadType": "num",
-        "x": 230,
-        "y": 980,
+        "x": 220,
+        "y": 580,
         "wires": [
             [
                 "bdd38d11.fc294"
@@ -6744,7 +6524,7 @@
         ],
         "uncaught": false,
         "x": 560,
-        "y": 1280,
+        "y": 1340,
         "wires": [
             [
                 "7419a8c6.741498"
@@ -6767,37 +6547,10 @@
         "randomUnits": "seconds",
         "drop": false,
         "x": 750,
-        "y": 1280,
+        "y": 1340,
         "wires": [
             [
                 "79e0edac5936fcef"
-            ]
-        ]
-    },
-    {
-        "id": "9b2d52e6.20b5b",
-        "type": "change",
-        "z": "51a47cad2bf9110a",
-        "name": "Drehzahl auf 0",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "0",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1560,
-        "y": 1700,
-        "wires": [
-            [
-                "fc55ed79.37a14"
             ]
         ]
     },
@@ -6821,7 +6574,7 @@
         "to": "",
         "reg": false,
         "x": 130,
-        "y": 1020,
+        "y": 980,
         "wires": [
             [
                 "7c806554.392d6c"
@@ -6883,171 +6636,14 @@
         "links": [
             "4533d1a9.07b58",
             "1723bac6.27f185",
-            "17161490.5c3f2b"
+            "17161490.5c3f2b",
+            "2db4d82f.caf828",
+            "d3fd1eba.f4f69"
         ],
-        "x": 1080,
-        "y": 900,
+        "x": 1480,
+        "y": 860,
         "wires": [],
         "l": true
-    },
-    {
-        "id": "7e7592e6.5d66ec",
-        "type": "rpi-ds18b20",
-        "z": "65a64bb71643ab7c",
-        "topic": "3c01b556d700",
-        "array": false,
-        "name": "",
-        "x": 370,
-        "y": 1100,
-        "wires": [
-            [
-                "9b2a7053.23309"
-            ]
-        ]
-    },
-    {
-        "id": "b49570b.a1ed09",
-        "type": "change",
-        "z": "65a64bb71643ab7c",
-        "name": "Temperatur lesen",
-        "rules": [
-            {
-                "t": "set",
-                "p": "engine.temp",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "engine.preheat",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 250,
-        "y": 1280,
-        "wires": [
-            [
-                "7e97fc17.d76ec4",
-                "bfdaff64.e67a"
-            ]
-        ]
-    },
-    {
-        "id": "7e97fc17.d76ec4",
-        "type": "range",
-        "z": "65a64bb71643ab7c",
-        "minin": "0",
-        "maxin": "50",
-        "minout": "50",
-        "maxout": "5",
-        "action": "clamp",
-        "round": true,
-        "property": "engine.preheat",
-        "name": "Vorglühzeit berechnen",
-        "x": 480,
-        "y": 1280,
-        "wires": [
-            [
-                "c9d20d78.4f671",
-                "bfdaff64.e67a"
-            ]
-        ]
-    },
-    {
-        "id": "c9d20d78.4f671",
-        "type": "change",
-        "z": "65a64bb71643ab7c",
-        "name": "In Millisekunden",
-        "rules": [
-            {
-                "t": "set",
-                "p": "delay",
-                "pt": "msg",
-                "to": "engine.preheat * 1000",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 1400,
-        "wires": [
-            [
-                "1a2a0b5b.c51935"
-            ]
-        ]
-    },
-    {
-        "id": "1a2a0b5b.c51935",
-        "type": "delay",
-        "z": "65a64bb71643ab7c",
-        "name": "Vorglühen Verzögern",
-        "pauseType": "delayv",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 740,
-        "y": 1400,
-        "wires": [
-            [
-                "bfdaff64.e67a"
-            ]
-        ]
-    },
-    {
-        "id": "f7816de1.858",
-        "type": "inject",
-        "z": "65a64bb71643ab7c",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 110,
-        "y": 1180,
-        "wires": [
-            [
-                "7e7592e6.5d66ec"
-            ]
-        ]
-    },
-    {
-        "id": "bfdaff64.e67a",
-        "type": "flogger",
-        "z": "65a64bb71643ab7c",
-        "name": "Test",
-        "logfile": "motor.log",
-        "inputchoice": "fullmsg",
-        "inputobject": "payload",
-        "inputobjectType": "msg",
-        "inputmoustache": "Recieved payload {{payload}} and topic {{topic}}",
-        "loglevel": "INFO",
-        "logconfig": "ad15f369.54c5a",
-        "sendpane": true,
-        "x": 870,
-        "y": 1240,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "e990aa10.5ab648",
@@ -7069,53 +6665,6 @@
         ]
     },
     {
-        "id": "34ee2630.692eea",
-        "type": "change",
-        "z": "51a47cad2bf9110a",
-        "name": "Setze RPM in msg",
-        "rules": [
-            {
-                "t": "set",
-                "p": "engine.rpm",
-                "pt": "msg",
-                "to": "engine.rpm",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 610,
-        "y": 980,
-        "wires": [
-            [
-                "59e6fc0e165e74a5",
-                "d2f3a78.f551758"
-            ]
-        ]
-    },
-    {
-        "id": "d2f3a78.f551758",
-        "type": "flogger",
-        "z": "51a47cad2bf9110a",
-        "name": "Log",
-        "logfile": "motor.log",
-        "inputchoice": "fullmsg",
-        "inputobject": "payload",
-        "inputobjectType": "msg",
-        "inputmoustache": "Recieved payload {{payload}} and topic {{topic}}",
-        "loglevel": "INFO",
-        "logconfig": "ad15f369.54c5a",
-        "sendpane": true,
-        "x": 830,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "fe62c435.8b90a8",
         "type": "flogger",
         "z": "51a47cad2bf9110a",
@@ -7128,10 +6677,12 @@
         "loglevel": "INFO",
         "logconfig": "ad15f369.54c5a",
         "sendpane": true,
-        "x": 330,
-        "y": 1220,
+        "x": 850,
+        "y": 1160,
         "wires": [
-            []
+            [
+                "e690fb93.687ef8"
+            ]
         ]
     },
     {
@@ -7160,8 +6711,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 190,
-        "y": 1220,
+        "x": 710,
+        "y": 1160,
         "wires": [
             [
                 "fe62c435.8b90a8"
@@ -7182,7 +6733,7 @@
         "logconfig": "ad15f369.54c5a",
         "sendpane": true,
         "x": 1070,
-        "y": 1280,
+        "y": 1340,
         "wires": [
             []
         ]
@@ -7324,26 +6875,6 @@
         ]
     },
     {
-        "id": "7fa4870b.0c9458",
-        "type": "ads1x15-raspi",
-        "z": "65a64bb71643ab7c",
-        "property": "payload",
-        "name": "49-A3-Inverter",
-        "chip": "IC_ADS1115",
-        "i2c_address": "ADDRESS_0x49",
-        "channel": "CHANNEL_3",
-        "samplesPerSecond0": "SPS_920",
-        "samplesPerSecond1": "SPS_250",
-        "progGainAmp": "PGA_2_048V",
-        "x": 760,
-        "y": 200,
-        "wires": [
-            [
-                "9d25b31a.f95b8"
-            ]
-        ]
-    },
-    {
         "id": "8a74eb4b.cfd648",
         "type": "inject",
         "z": "65a64bb71643ab7c",
@@ -7368,7 +6899,7 @@
         "y": 200,
         "wires": [
             [
-                "7fa4870b.0c9458"
+                "9c0f8339.a12d8"
             ]
         ]
     },
@@ -7817,8 +7348,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 1020,
+        "x": 1000,
+        "y": 1000,
         "wires": []
     },
     {
@@ -7851,8 +7382,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 600,
-        "y": 1080,
+        "x": 1060,
+        "y": 1160,
         "wires": []
     },
     {
@@ -7898,14 +7429,14 @@
         "type": "udp out",
         "z": "1156325a.13be5e",
         "name": "",
-        "addr": "192.168.8.101",
+        "addr": "",
         "iface": "",
         "port": "7777",
         "ipv": "udp4",
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 1170,
+        "x": 1120,
         "y": 300,
         "wires": []
     },
@@ -7948,22 +7479,6 @@
         ]
     },
     {
-        "id": "fb2a3ac6.2f0ad8",
-        "type": "debug",
-        "z": "1156325a.13be5e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1220,
-        "y": 160,
-        "wires": []
-    },
-    {
         "id": "9c3b2b5a.c5cfa8",
         "type": "change",
         "z": "1156325a.13be5e",
@@ -7997,8 +7512,8 @@
         "itemname": "libratoneVolume",
         "topic": "",
         "initialstate": false,
-        "whenupdated": false,
-        "whencommand": true,
+        "whenupdated": true,
+        "whencommand": false,
         "whenchanged": false,
         "changedfrom": "",
         "changedto": "",
@@ -8015,7 +7530,7 @@
         "type": "function",
         "z": "1156325a.13be5e",
         "name": "Libratone Volume Template",
-        "func": "function hexToBytes(hex) {\n  for (var bytes = [], c = 0; c < hex.length; c += 2)\n    bytes.push(parseInt(hex.substr(c, 2), 16));\n  return bytes;\n}\n\nfunction bytesToHex(hexString) {\n    if (hexString.length % 2 !== 0) {\n        throw \"Must have an even number of hex digits to convert to bytes\";\n    }/* w w w.  jav  a2 s .  c o  m*/\n    var numBytes = hexString.length / 2;\n    var byteArray = new Uint8Array(numBytes);\n    for (var i=0; i<numBytes; i++) {\n        byteArray[i] = parseInt(hexString.substr(i*2, 2), 16);\n    }\n    return byteArray;\n}\n\nlet template = \"00000200400000000002\";\nif (msg.payload.length < 2) msg.payload = \"0\" + msg.payload;\n\n[...msg.payload].forEach(function (item) {\n  template += `3${item}`;\n});\n\nnode.warn(template);\n\n\nmsg.payload = bytesToHex(template);\n\n\nmsg.payload = \"\\x00\\x00\\x02\\x00\\x40\\x00\\x00\\x00\\x00\\x02\\x31\\x35\";\nreturn msg;",
+        "func": "const volumes = {\n    \"0\": \"\\x30\",\n    \"1\": \"\\x31\",\n    \"2\": \"\\x32\",\n    \"3\": \"\\x33\",\n    \"4\": \"\\x34\",\n    \"5\": \"\\x35\",\n    \"6\": \"\\x36\",\n    \"7\": \"\\x37\",\n    \"8\": \"\\x38\",\n    \"9\": \"\\x39\",\n}\n\nfunction toHexString(byteArray) {\n  return Array.from(byteArray, function(byte) {\n    return ('0' + (byte & 0xFF).toString(16)).slice(-2);\n  }).join('')\n}\n\n\nlet template = \"\\x00\\x00\\x02\\x00\\x40\\x00\\x00\\x00\\x00\\x02\";\n\n\n[...msg.payload].forEach(function (item) {\n  template += volumes[item];\n});\n\n\nmsg.payload = template;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8026,7 +7541,7 @@
         "wires": [
             [
                 "e9cb6c9e.d66b5",
-                "8f80be4.30b374"
+                "58f5e809.fb61c8"
             ]
         ]
     },
@@ -8056,22 +7571,6 @@
                 "88e3d06d.1fb13"
             ]
         ]
-    },
-    {
-        "id": "8f80be4.30b374",
-        "type": "debug",
-        "z": "1156325a.13be5e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1120,
-        "y": 360,
-        "wires": []
     },
     {
         "id": "c0725416.311748",
@@ -8134,35 +7633,6 @@
         "x": 530,
         "y": 60,
         "wires": []
-    },
-    {
-        "id": "4c59d832.49d0f8",
-        "type": "inject",
-        "z": "51a47cad2bf9110a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 910,
-        "y": 360,
-        "wires": [
-            [
-                "233fd743.dab9c8"
-            ]
-        ]
     },
     {
         "id": "b6dc57c5.144918",
@@ -8430,7 +7900,7 @@
         "z": "709c0aa7433349ed",
         "name": "CE1 / 7",
         "info": "",
-        "x": 1430,
+        "x": 1590,
         "y": 820,
         "wires": []
     },
@@ -8572,5 +8042,340 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "9c0f8339.a12d8",
+        "type": "ads1x15-raspi",
+        "z": "65a64bb71643ab7c",
+        "property": "payload",
+        "name": "48 - A0/Öldruck",
+        "chip": "IC_ADS1115",
+        "i2c_address": "ADDRESS_0x48",
+        "channel": "CHANNEL_0",
+        "samplesPerSecond0": "SPS_920",
+        "samplesPerSecond1": "SPS_64",
+        "progGainAmp": "PGA_4_096V",
+        "x": 760,
+        "y": 260,
+        "wires": [
+            [
+                "9d25b31a.f95b8"
+            ]
+        ]
+    },
+    {
+        "id": "20ae8ccc.8009e4",
+        "type": "inject",
+        "z": "1156325a.13be5e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "4e11fb33.aba084"
+            ]
+        ]
+    },
+    {
+        "id": "760b7ec7.fa1ad",
+        "type": "link out",
+        "z": "51a47cad2bf9110a",
+        "name": "Motor starten",
+        "links": [
+            "18b0e30c.f77d9d",
+            "26d8fbee.3bcb34"
+        ],
+        "x": 800,
+        "y": 820,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "d5372c78.b60cb",
+        "type": "delay",
+        "z": "51a47cad2bf9110a",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1600,
+        "y": 1760,
+        "wires": [
+            [
+                "3260663f.a86bfa",
+                "b2fb3f36.ffd6f",
+                "eb921083.f59fa",
+                "a73c8208.12476"
+            ]
+        ]
+    },
+    {
+        "id": "73ca5fb5.57d6a",
+        "type": "change",
+        "z": "51a47cad2bf9110a",
+        "name": "rest delay",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1390,
+        "y": 1880,
+        "wires": [
+            [
+                "d5372c78.b60cb"
+            ]
+        ]
+    },
+    {
+        "id": "eb921083.f59fa",
+        "type": "debug",
+        "z": "51a47cad2bf9110a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "9ecac1db.afd2d",
+        "type": "link in",
+        "z": "51a47cad2bf9110a",
+        "name": "-> Motor aus",
+        "links": [
+            "3260663f.a86bfa"
+        ],
+        "x": 1210,
+        "y": 1520,
+        "wires": [
+            [
+                "6367376fc0cece4a"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "29313b9a.a59b84",
+        "type": "change",
+        "z": "51a47cad2bf9110a",
+        "name": "Set engine running",
+        "rules": [
+            {
+                "t": "set",
+                "p": "engine.running",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 880,
+        "wires": [
+            [
+                "1598465f8c9ff5fb",
+                "c281abeb.b53a68"
+            ]
+        ]
+    },
+    {
+        "id": "70a930dc.32d7c",
+        "type": "switch",
+        "z": "51a47cad2bf9110a",
+        "name": "if running",
+        "property": "engine.running",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1380,
+        "y": 1760,
+        "wires": [
+            [
+                "d5372c78.b60cb"
+            ]
+        ]
+    },
+    {
+        "id": "a73c8208.12476",
+        "type": "change",
+        "z": "51a47cad2bf9110a",
+        "name": "Set engine stopped",
+        "rules": [
+            {
+                "t": "set",
+                "p": "engine.running",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1850,
+        "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fd40b40.42bd18",
+        "type": "flogger",
+        "z": "51a47cad2bf9110a",
+        "name": "Log",
+        "logfile": "motor.log",
+        "inputchoice": "fullmsg",
+        "inputobject": "payload",
+        "inputobjectType": "msg",
+        "inputmoustache": "Recieved payload {{payload}} and topic {{topic}}",
+        "loglevel": "INFO",
+        "logconfig": "ad15f369.54c5a",
+        "sendpane": true,
+        "x": 2010,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "afd3511a.abab1",
+        "type": "udp in",
+        "z": "1156325a.13be5e",
+        "name": "",
+        "iface": "",
+        "port": "1800",
+        "ipv": "udp4",
+        "multicast": "true",
+        "group": "255.255.255.255",
+        "datatype": "utf8",
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "a879231e.79191"
+            ]
+        ]
+    },
+    {
+        "id": "a5723ad2.59a128",
+        "type": "debug",
+        "z": "1156325a.13be5e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a879231e.79191",
+        "type": "function",
+        "z": "1156325a.13be5e",
+        "name": "parse volume",
+        "func": "msg.payload = msg.payload.match(\"Characterstic: \\\\d+,\\\\d+,\\\\d+,\\\\d+,(\\\\d+),\")[1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 220,
+        "wires": [
+            [
+                "a5723ad2.59a128",
+                "36270f3c.592a2"
+            ]
+        ]
+    },
+    {
+        "id": "36270f3c.592a2",
+        "type": "subflow:5260990c.64ecc8",
+        "z": "1156325a.13be5e",
+        "name": "libratoneVolume",
+        "env": [
+            {
+                "name": "item",
+                "value": "libratoneVolume",
+                "type": "str"
+            }
+        ],
+        "x": 1150,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58f5e809.fb61c8",
+        "type": "debug",
+        "z": "1156325a.13be5e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 440,
+        "wires": []
     }
 ]
