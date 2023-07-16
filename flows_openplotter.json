@@ -348,8 +348,8 @@
         "type": "range",
         "z": "51a47cad2bf9110a",
         "minin": "0",
-        "maxin": "35",
-        "minout": "50",
+        "maxin": "50",
+        "minout": "60",
         "maxout": "0",
         "action": "clamp",
         "round": true,
@@ -5119,7 +5119,6 @@
         "y": 2020,
         "wires": [
             [
-                "7851209c.fe64a",
                 "a9f52260.637c"
             ]
         ]
@@ -6875,51 +6874,6 @@
         ]
     },
     {
-        "id": "8a74eb4b.cfd648",
-        "type": "inject",
-        "z": "65a64bb71643ab7c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 580,
-        "y": 200,
-        "wires": [
-            [
-                "9c0f8339.a12d8"
-            ]
-        ]
-    },
-    {
-        "id": "9d25b31a.f95b8",
-        "type": "debug",
-        "z": "65a64bb71643ab7c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1010,
-        "y": 200,
-        "wires": []
-    },
-    {
         "id": "31b41180.4bb80e",
         "type": "inject",
         "z": "709c0aa7433349ed",
@@ -7437,7 +7391,7 @@
         "base64": false,
         "multicast": "false",
         "x": 1120,
-        "y": 300,
+        "y": 380,
         "wires": []
     },
     {
@@ -7517,11 +7471,11 @@
         "whenchanged": false,
         "changedfrom": "",
         "changedto": "",
-        "x": 390,
+        "x": 400,
         "y": 300,
         "wires": [
             [
-                "4e11fb33.aba084"
+                "9fc0c123.ea9d3"
             ]
         ]
     },
@@ -7537,10 +7491,11 @@
         "finalize": "",
         "libs": [],
         "x": 830,
-        "y": 300,
+        "y": 380,
         "wires": [
             [
-                "e9cb6c9e.d66b5"
+                "e9cb6c9e.d66b5",
+                "33f1090d.6126e6"
             ]
         ]
     },
@@ -7564,7 +7519,7 @@
         "to": "",
         "reg": false,
         "x": 580,
-        "y": 300,
+        "y": 380,
         "wires": [
             [
                 "88e3d06d.1fb13"
@@ -7600,22 +7555,6 @@
             ]
         ],
         "l": true
-    },
-    {
-        "id": "7851209c.fe64a",
-        "type": "debug",
-        "z": "51a47cad2bf9110a",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1850,
-        "y": 1960,
-        "wires": []
     },
     {
         "id": "f45fbd09.bbc84",
@@ -8043,26 +7982,6 @@
         ]
     },
     {
-        "id": "9c0f8339.a12d8",
-        "type": "ads1x15-raspi",
-        "z": "65a64bb71643ab7c",
-        "property": "payload",
-        "name": "48 - A0/Öldruck",
-        "chip": "IC_ADS1115",
-        "i2c_address": "ADDRESS_0x48",
-        "channel": "CHANNEL_0",
-        "samplesPerSecond0": "SPS_920",
-        "samplesPerSecond1": "SPS_64",
-        "progGainAmp": "PGA_4_096V",
-        "x": 760,
-        "y": 260,
-        "wires": [
-            [
-                "9d25b31a.f95b8"
-            ]
-        ]
-    },
-    {
         "id": "760b7ec7.fa1ad",
         "type": "link out",
         "z": "51a47cad2bf9110a",
@@ -8283,7 +8202,7 @@
         "type": "function",
         "z": "1156325a.13be5e",
         "name": "parse volume",
-        "func": "msg.payload = msg.payload.match(\"Characterstic: \\\\d+,\\\\d+,\\\\d+,\\\\d+,(\\\\d+),\")[1];\nreturn msg;",
+        "func": "msg.payload = parseInt(msg.payload.match(\"Characterstic: \\\\d+,\\\\d+,\\\\d+,\\\\d+,(\\\\d+),\")[1]);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8293,7 +8212,8 @@
         "y": 220,
         "wires": [
             [
-                "36270f3c.592a2"
+                "36270f3c.592a2",
+                "9fc0c123.ea9d3"
             ]
         ]
     },
@@ -8314,5 +8234,40 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "9fc0c123.ea9d3",
+        "type": "rbe",
+        "z": "1156325a.13be5e",
+        "name": "block same values",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "x": 690,
+        "y": 300,
+        "wires": [
+            [
+                "4e11fb33.aba084"
+            ]
+        ]
+    },
+    {
+        "id": "33f1090d.6126e6",
+        "type": "debug",
+        "z": "1156325a.13be5e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 480,
+        "wires": []
     }
 ]
