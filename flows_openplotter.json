@@ -7540,8 +7540,7 @@
         "y": 300,
         "wires": [
             [
-                "e9cb6c9e.d66b5",
-                "58f5e809.fb61c8"
+                "e9cb6c9e.d66b5"
             ]
         ]
     },
@@ -8064,35 +8063,6 @@
         ]
     },
     {
-        "id": "20ae8ccc.8009e4",
-        "type": "inject",
-        "z": "1156325a.13be5e",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "50",
-        "payloadType": "str",
-        "x": 380,
-        "y": 400,
-        "wires": [
-            [
-                "4e11fb33.aba084"
-            ]
-        ]
-    },
-    {
         "id": "760b7ec7.fa1ad",
         "type": "link out",
         "z": "51a47cad2bf9110a",
@@ -8309,22 +8279,6 @@
         ]
     },
     {
-        "id": "a5723ad2.59a128",
-        "type": "debug",
-        "z": "1156325a.13be5e",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 870,
-        "y": 240,
-        "wires": []
-    },
-    {
         "id": "a879231e.79191",
         "type": "function",
         "z": "1156325a.13be5e",
@@ -8339,7 +8293,6 @@
         "y": 220,
         "wires": [
             [
-                "a5723ad2.59a128",
                 "36270f3c.592a2"
             ]
         ]
@@ -8356,26 +8309,10 @@
                 "type": "str"
             }
         ],
-        "x": 1150,
-        "y": 180,
+        "x": 940,
+        "y": 220,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "58f5e809.fb61c8",
-        "type": "debug",
-        "z": "1156325a.13be5e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1160,
-        "y": 440,
-        "wires": []
     }
 ]
