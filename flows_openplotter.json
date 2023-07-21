@@ -2601,7 +2601,7 @@
         "id": "9a32e407.b7c448",
         "type": "inject",
         "z": "de1f4de9.aa4a1",
-        "name": "",
+        "name": "Every sec",
         "props": [
             {
                 "p": "payload"
@@ -2611,7 +2611,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "2",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -3114,7 +3114,7 @@
         "name": "",
         "property": "payload.amperage",
         "action": "mean",
-        "count": "10",
+        "count": "3",
         "round": "",
         "mult": "single",
         "reduce": false,
@@ -3675,31 +3675,6 @@
         ]
     },
     {
-        "id": "bacface8.7da98",
-        "type": "inject",
-        "z": "709c0aa7433349ed",
-        "name": "GPIO Aus",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "OFF",
-        "payloadType": "str",
-        "x": 180,
-        "y": 580,
-        "wires": [
-            [
-                "28caae9c7a77ed69"
-            ]
-        ]
-    },
-    {
         "id": "3a078876.fbdbc8",
         "type": "inject",
         "z": "709c0aa7433349ed",
@@ -4008,31 +3983,6 @@
         "x": 325,
         "y": 680,
         "wires": []
-    },
-    {
-        "id": "f31d3f52.d19c9",
-        "type": "inject",
-        "z": "709c0aa7433349ed",
-        "name": "GPIO Ein",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "ON",
-        "payloadType": "str",
-        "x": 180,
-        "y": 620,
-        "wires": [
-            [
-                "28caae9c7a77ed69"
-            ]
-        ]
     },
     {
         "id": "9b2a7b1b.a8bba8",
@@ -5119,7 +5069,7 @@
         "y": 2020,
         "wires": [
             [
-                "a9f52260.637c"
+                "e8fbec52.e398d"
             ]
         ]
     },
@@ -5160,7 +5110,7 @@
                 "type": "str"
             }
         ],
-        "x": 1830,
+        "x": 1990,
         "y": 2020,
         "wires": [
             []
@@ -6382,7 +6332,7 @@
         "round": false,
         "property": "payload.voltage",
         "name": "Drucksensor",
-        "x": 1330,
+        "x": 1170,
         "y": 2080,
         "wires": [
             [
@@ -6409,11 +6359,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1610,
+        "x": 1390,
         "y": 2080,
         "wires": [
             [
-                "ebe6eef7.30f69"
+                "5876eb05.b81ce4"
             ]
         ]
     },
@@ -7025,7 +6975,7 @@
         "y": 1660,
         "wires": [
             [
-                "1b96d24.52f132e"
+                "a4eaf833.11b598"
             ]
         ]
     },
@@ -7060,7 +7010,7 @@
                 "type": "num"
             }
         ],
-        "x": 910,
+        "x": 850,
         "y": 1660,
         "wires": [
             [
@@ -7141,7 +7091,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 710,
+        "x": 610,
         "y": 1660,
         "wires": [
             [
@@ -7205,36 +7155,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1070,
+        "x": 1050,
         "y": 1660,
         "wires": [
             [
                 "1ea6b912.13da37"
-            ]
-        ]
-    },
-    {
-        "id": "1b96d24.52f132e",
-        "type": "switch",
-        "z": "295744be76460eb7",
-        "name": "grösser 1",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "gte",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 520,
-        "y": 1660,
-        "wires": [
-            [
-                "a4eaf833.11b598"
             ]
         ]
     },
@@ -7355,7 +7280,7 @@
         "y": 1600,
         "wires": [
             [
-                "19104b35.5e74a5"
+                "1bbb4880.f415c7"
             ]
         ]
     },
@@ -7895,25 +7820,6 @@
         "y": 1900,
         "wires": [
             [
-                "d3c84f1f.5f0a5"
-            ]
-        ]
-    },
-    {
-        "id": "d3c84f1f.5f0a5",
-        "type": "smooth",
-        "z": "295744be76460eb7",
-        "name": "",
-        "property": "payload",
-        "action": "mean",
-        "count": "10",
-        "round": "1",
-        "mult": "single",
-        "reduce": false,
-        "x": 640,
-        "y": 1900,
-        "wires": [
-            [
                 "9464b73.3905548"
             ]
         ]
@@ -7925,16 +7831,16 @@
         "minin": "41",
         "maxin": "10",
         "minout": "0",
-        "maxout": "100",
+        "maxout": "31",
         "action": "scale",
-        "round": true,
+        "round": false,
         "property": "payload",
         "name": "",
-        "x": 880,
+        "x": 630,
         "y": 1900,
         "wires": [
             [
-                "f8b11bdb.e539d8"
+                "ac0293d7.60019"
             ]
         ]
     },
@@ -7950,7 +7856,7 @@
                 "type": "str"
             }
         ],
-        "x": 1120,
+        "x": 1320,
         "y": 1900,
         "wires": [
             []
@@ -8269,5 +8175,159 @@
         "x": 1120,
         "y": 480,
         "wires": []
+    },
+    {
+        "id": "ac0293d7.60019",
+        "type": "change",
+        "z": "295744be76460eb7",
+        "name": "Wurzelfunktion",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round(100/$sqrt(30)*$sqrt(msg.payload))",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 1900,
+        "wires": [
+            [
+                "8d7fb4a4.e1a178"
+            ]
+        ]
+    },
+    {
+        "id": "8d7fb4a4.e1a178",
+        "type": "rbe",
+        "z": "295744be76460eb7",
+        "name": "",
+        "func": "narrowband",
+        "gap": "3",
+        "start": "",
+        "inout": "in",
+        "septopics": true,
+        "property": "payload",
+        "x": 1010,
+        "y": 1900,
+        "wires": [
+            [
+                "8a1d02a4.2ecc8"
+            ]
+        ]
+    },
+    {
+        "id": "8a1d02a4.2ecc8",
+        "type": "switch",
+        "z": "295744be76460eb7",
+        "name": "limit",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "btwn",
+                "v": "0",
+                "vt": "num",
+                "v2": "100",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 1900,
+        "wires": [
+            [
+                "f8b11bdb.e539d8"
+            ]
+        ]
+    },
+    {
+        "id": "1bbb4880.f415c7",
+        "type": "switch",
+        "z": "295744be76460eb7",
+        "name": "limit",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "btwn",
+                "v": "-45",
+                "vt": "num",
+                "v2": "45",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1030,
+        "y": 1600,
+        "wires": [
+            [
+                "19104b35.5e74a5"
+            ]
+        ]
+    },
+    {
+        "id": "5876eb05.b81ce4",
+        "type": "switch",
+        "z": "51a47cad2bf9110a",
+        "name": "limit",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "btwn",
+                "v": "0",
+                "vt": "num",
+                "v2": "10",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1630,
+        "y": 2080,
+        "wires": [
+            [
+                "ebe6eef7.30f69"
+            ]
+        ]
+    },
+    {
+        "id": "e8fbec52.e398d",
+        "type": "switch",
+        "z": "51a47cad2bf9110a",
+        "name": "limit",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "btwn",
+                "v": "0",
+                "vt": "num",
+                "v2": "100",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1830,
+        "y": 2020,
+        "wires": [
+            [
+                "a9f52260.637c"
+            ]
+        ]
     }
 ]
